@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/register"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="username"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input"
+        android:id="@+id/usernameInput"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="email"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/usernameInput"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input"
+        android:id="@+id/emailInput"
+
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="password"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input"
+        android:id="@+id/passwordInput"
+        android:textSize="18dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#ef6c4c"
+        android:id="@+id/registerButton">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerButton"
+        android:text="Login."
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="move2"
+        android:clickable="true"
+        />
+
+
+</RelativeLayout>
